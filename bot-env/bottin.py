@@ -37,6 +37,11 @@ async def join(ctx):
 
 
 @client.command()
+async def helpme(ctx, arg1):
+    await ctx.send(f'What is {arg1}?')
+
+
+@client.command()
 async def ding(ctx):
     playsound(ctx, "./sounds/Ding.mp3", .5)
 
